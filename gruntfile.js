@@ -83,9 +83,11 @@ module.exports = function(grunt) {
                 }
             }
         },    
-        clean: ['prebuild']
-        ,
+        clean: ['prebuild'],
         uglify: {
+            options: {
+                mangle: false
+            },
             target: {
                 files: {
                     'dist/scripts/main.min.js': 'src/scripts/main.js'
