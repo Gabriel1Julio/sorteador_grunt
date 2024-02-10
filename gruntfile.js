@@ -92,19 +92,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        sass: {
-            dist: {
-                options: {
-                    style: 'compressed'
-                },
-                files: {
-                    'main2.css': 'main.scss'
-                }
-            }
-        },
-        concurrent: {
-            target: ['olagrunt', 'less', 'sass']
-        }
     })
 
     grunt.loadNpmTasks('grunt-contrib-less');
